@@ -7,4 +7,5 @@ public class Student extends Person {
         super(firstName, familyName);
         this.transcript = transcript;
     }
+
 }
