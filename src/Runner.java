@@ -10,7 +10,8 @@ public class Runner {
     "Stir","Eat","Greet","Meet","Sleep"};
 
     public static void main(String[] args){
-    Person Teacher = new Teacher(getFirstname(),getFamilyName());
+    Person teacher = new Teacher("Math" , "Mr.");
+    
     }
 
 }
