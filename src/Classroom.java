@@ -11,5 +11,19 @@ public class Classroom {
         return teacher.getSubject();
     }
 
+    public double classAverage(){
+        double sum = 0;
+        for (Student s : students){
+            sum += s.getGPA();
+        }
+        return sum/ students.length;
+    }
+
+    public void printClass(){
+        System.out.println(teacher.toString());
+        for (Student s : students){
+            System.out.println(s.toString());
+        }
+    }
 
 }
