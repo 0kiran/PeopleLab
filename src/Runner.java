@@ -11,7 +11,13 @@ public class Runner {
 
     public static void main(String[] args){
     Person teacher = new Teacher("Math" , "Mr.");
-    
+    Classroom(String[] firstNames)
+        for (p=0; p<=30; p++){
+            Person student = new Student(indexOf(firstNames));
+            Person student = new Student(indexOf(familyNames));
+            int GPA = (int)Math.random()*5;
+            GPA += GPA + GPA;
+        }
     }
 
 }
