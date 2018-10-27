@@ -10,14 +10,22 @@ public class Runner {
     "Stir","Eat","Greet","Meet","Sleep"};
 
     public static void main(String[] args){
-    Person teacher = new Teacher("Math" , "Mr.");
+        int classA=36;
+
+        Teacher classTeacher = new Teacher("Sergei","Katryshov","Math","Mr.");
     Classroom(String[] firstNames)
-        for (p=0; p<=30; p++){
-            Person student = new Student(indexOf(firstNames));
-            Person student = new Student(indexOf(familyNames));
-            int GPA = (int)Math.random()*5;
-            GPA += GPA + GPA;
+        for (int p=0; p<=30; p++){
+
         }
+
+        }
+        public static setTranscript
+        public static Student randomStudent(){
+
+        String randomName = firstNames[(int)(Math.random()*firstNames.length)];
+        String randomFamName = familyNames[(int)(Math.random()*familyNames.length)];
+        double someGPA = Math.round(Math.random()*4+0.4);
+        return new Student(randomName,randomFamName,someGPA,grade)
     }
 
 }
