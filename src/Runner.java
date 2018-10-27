@@ -8,14 +8,15 @@ public class Runner {
     "Makovsky","Hassan","Kyung","Ree","Wry","Werner","Worsace","Bezar","Behoof","Calendar","Table","Spoon","Fork","Knives",
     "Chopsticks","Noot","Poot","Root","Soot","Kriechovsky","Narmek","Chan","Stingray","MantaRay","Femto","Shake","And",
     "Stir","Eat","Greet","Meet","Sleep"};
+    
+    public static String[] majors = {"Math", "Physics", "BioSci", "Pharm", "SSR", "Software", "College Prep", "Civil", "Electrical Engineering", "Aerospace", "Mechatronics", "Media", "LAS", "Finance"};
 
     public static void main(String[] args){
         int classA=36;
 
         Teacher classTeacher = new Teacher("Sergei","Katryshov","Math","Mr.");
-    Classroom(String[] firstNames)
-        for (int p=0; p<=30; p++){
-
+        Classroom(String[] firstNames)
+            for (int p=0; p<=30; p++){
         }
 
         }
