@@ -12,21 +12,23 @@ public class Runner {
     public static String[] majors = {"Math", "Physics", "BioSci", "Pharm", "SSR", "Software", "College Prep", "Civil", "Electrical Engineering", "Aerospace", "Mechatronics", "Media", "LAS", "Finance"};
 
     public static void main(String[] args){
-        int classA=36;
-
-        Teacher classTeacher = new Teacher("Sergei","Katryshov","Math","Mr.");
-        Classroom(String[] firstNames)
-            for (int p=0; p<=30; p++){
-        }
-
-        }
-        public static setTranscript
-        public static Student randomStudent(){
-
-        String randomName = firstNames[(int)(Math.random()*firstNames.length)];
-        String randomFamName = familyNames[(int)(Math.random()*familyNames.length)];
-        double someGPA = Math.round(Math.random()*4+0.4);
-        return new Student(randomName,randomFamName,someGPA,grade)
+        Teacher classTeacher = new Teacher(randomFirstName(), randomFamilyName(),"Computer Science","Mr.");                                      
+    }
+    
+    public static Student randomStudent() {
+        Student newStudent = new Student(randomFirstName(), randomLastName(), randomMajor, 0)
+    }
+                                           
+    public static String randomFirstName(){
+        return firstNames[(int)(Math.random()*firstNames.length)];
+    }
+                                           
+    public static String randomFamilyName(){
+        return familyNames[(int)(Math.random()*familyNames.length)];
+    }
+                                           
+    public static String randomMajor(){
+       return majors[(int)(Math.random()*majors.length)];
     }
 
 }
