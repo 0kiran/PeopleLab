@@ -25,7 +25,7 @@ public class Runner {
     }
     
     public static Student randomStudent() {
-        Student newStudent = new Student(randomFirstName(), randomFamilyName(), Math.random()*4, randomMajor(), randomQuote());
+        Student newStudent = new Student(randomFirstName(), randomFamilyName(), Math.random()*2 + 2, randomMajor(), randomQuote());
         return newStudent;
     }
                                            
