@@ -21,7 +21,7 @@ public class Runner {
         }
         Classroom classroom = new Classroom(students, classTeacher);
         classroom.printClass();
-        classroom.classAverage();
+        System.out.println("The class's average GPA is" + classroom.classAverage());
     }
     
     public static Student randomStudent() {
