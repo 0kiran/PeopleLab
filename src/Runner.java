@@ -21,6 +21,7 @@ public class Runner {
         }
         Classroom classroom = new Classroom(students, classTeacher);
         classroom.printClass();
+        System.out.println("The teacher is "+classTeacher+". Their subject is "+classTeacher.getSubject()+".");
         System.out.println("The class's average GPA is" + classroom.classAverage());
     }
     
