@@ -20,6 +20,8 @@ public class Runner {
             students[i] = randomStudent();
         }
         Classroom classroom = new Classroom(students, classTeacher);
+        classroom.printClass();
+        classroom.classAverage();
     }
     
     public static Student randomStudent() {
