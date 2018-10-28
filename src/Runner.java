@@ -8,24 +8,40 @@ public class Runner {
     "Makovsky","Hassan","Kyung","Ree","Wry","Werner","Worsace","Bezar","Behoof","Calendar","Table","Spoon","Fork","Knives",
     "Chopsticks","Noot","Poot","Root","Soot","Kriechovsky","Narmek","Chan","Stingray","MantaRay","Femto","Shake","And",
     "Stir","Eat","Greet","Meet","Sleep"};
-
+    
+    public static String[] majors = {"Math", "Physics", "BioSci", "Pharm", "SSR", "Software", "College Prep", "Civil", "Electrical Engineering", "Aerospace", "Mechatronics", "Media", "LAS", "Finance"};
+    
+    public static String[] quotes = {"Winning isn't everything, it's just the only thing that matters", "I have Ligma", "I need to be successful because I like expensive things", "We're going to do everything as seniors to keep this going"};
+    
     public static void main(String[] args){
-        int classA=36;
-
-        Teacher classTeacher = new Teacher("Sergei","Katryshov","Math","Mr.");
-        Student[] students = new Student[classA];
-        for (int a=0; a<=30; a++){
-            students[a] = randomStudent();
+        Teacher classTeacher = new Teacher(randomFirstName(), randomFamilyName(),"Computer Science","Mr.");
+        Student[] students = new Student[32];
+        for(int i = 0; i < students.length; i++){
+            students[i] = randomStudent();
         }
-
-        }
-        public static setTranscript
-        public static Student randomStudent(){
-
-        String randomName = firstNames[(int)(Math.random()*firstNames.length)];
-        String randomFamName = familyNames[(int)(Math.random()*familyNames.length)];
-        double someGPA = Math.round(Math.random()*4+0.4);
-        return new Student(randomName,randomFamName,someGPA,grade)
+        Classroom classroom = new Classroom(students, classTeacher);
+        classroom.printClass();
+        System.out.println("The class's average GPA is" + classroom.classAverage());
     }
-
+    
+    public static Student randomStudent() {
+        Student newStudent = new Student(randomFirstName(), randomFamilyName(), Math.random()*4, randomMajor(), randomQuote());
+        return newStudent;
+    }
+                                           
+    public static String randomFirstName(){
+        return firstNames[(int)(Math.random()*firstNames.length)];
+    }
+                                           
+    public static String randomFamilyName(){
+        return familyNames[(int)(Math.random()*familyNames.length)];
+    }
+                                           
+    public static String randomMajor(){
+       return majors[(int)(Math.random()*majors.length)];
+    }
+    
+    public static String randomQuote() {
+        return quotes[(int)(Math.random()*quotes.length)];
+    }
 }
