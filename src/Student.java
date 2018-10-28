@@ -32,7 +32,7 @@ public class Student extends Person {
     }
     
     public String toString(){
-        return this.getFirstName() + this.getFamilyName();
+        return this.getFirstName() +" "+ this.getFamilyName();
     }
 
 }
