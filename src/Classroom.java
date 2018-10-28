@@ -21,6 +21,7 @@ public class Classroom {
 
     public void printClass(){
         System.out.println(teacher.toString());
+        System.out.println(teacher.getSubject());
         for (Student s : students){
             System.out.println(s.toString());
         }
