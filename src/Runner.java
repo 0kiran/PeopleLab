@@ -14,7 +14,7 @@ public class Runner {
     public static String[] quotes = {"Winning isn't everything, it's just the only thing that matters", "I have Ligma", "I need to be successful because I like expensive things", "We're going to do everything as seniors to keep this going"};
     
     public static void main(String[] args){
-        Teacher classTeacher = new Teacher(randomFirstName(), randomFamilyName(),"Computer Science","Mr.");
+        Teacher classTeacher = new Teacher(randomFirstName(), randomFamilyName(),"Computer Science","Mr");
         Student[] students = new Student[32];
         for(int i = 0; i < students.length; i++){
             students[i] = randomStudent();
@@ -26,7 +26,7 @@ public class Runner {
     }
     
     public static Student randomStudent() {
-        Student newStudent = new Student(randomFirstName(), randomFamilyName(), Math.random()*4, randomMajor(), randomQuote());
+        Student newStudent = new Student(randomFirstName(), randomFamilyName(), Math.random()*2 + 2, randomMajor(), randomQuote());
         return newStudent;
     }
                                            
