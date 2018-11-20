@@ -1,6 +1,5 @@
 public class Runner {
-    
-    //Ricky Zhao
+
     //List of strings for first names, last names, and senior quotes and majors.
     public static String[] firstNames = {"Liam","Mary","Timothy","Sterling","Sergei","Stanley","Sera","Tera","Terrence",
     "Terrance", "Ronald","Alfred","Arnold","Anna","Benedict","Ber","Burt","Car","Chester","David","Donald","Denver",
