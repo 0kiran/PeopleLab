@@ -1,4 +1,6 @@
 public class Teacher extends Person{
+    
+    //Ricky Zhao
     private String subject, title;
 
     public Teacher(String firstName, String familyName, String subject, String title){
